@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="夏一博的个人主页" />
+  <title>夏一博 · Xia Yibo</title>
+  <script src="js/theme.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header class="nav" id="top">
+    <a class="nav__logo" href="index.html">
+      <span class="nav__logo-mark">&lt;/&gt;</span>
+      <span>夏一博</span>
+    </a>
+    <nav class="nav__links" id="nav-links">
+      <a href="#about" data-i18n="nav.about">关于我</a>
+      <a href="#pets" data-i18n="nav.pets">宠物</a>
+      <a href="#contact" data-i18n="nav.contact">联系</a>
+    </nav>
+    <button class="theme-toggle" data-theme-toggle type="button" aria-label="切换主题">
+      <span class="theme-toggle__icon">🌙</span>
+    </button>
+    <button class="lang-switch" id="lang-switch" type="button" aria-label="Switch language">
+      <span class="lang-switch__zh">中</span>
+      <span class="lang-switch__sep">/</span>
+      <span class="lang-switch__en">EN</span>
+    </button>
+    <button class="nav__burger" id="nav-burger" type="button" aria-label="菜单">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main>
+    <!-- 首屏 Hero -->
+    <section class="hero">
+      <div class="hero__avatar" id="hero-avatar"></div>
+      <p class="hero__eyebrow" data-i18n="hero.eyebrow">// 你好，世界</p>
+      <h1 class="hero__name">
+        <span id="hero-name">夏一博</span>
+        <span class="hero__name-en" id="hero-name-en">Xia Yibo</span>
+      </h1>
+      <p class="hero__title">
+        <span id="hero-role">在校学生</span>
+        <span class="hero__cursor" aria-hidden="true"></span>
+      </p>
+      <p class="hero__subtitle" id="hero-subtitle">保持好奇，持续学习。这是一个关于我的主页。</p>
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#about" data-i18n="hero.cta1">了解我</a>
+        <a class="btn btn--ghost" href="#contact" data-i18n="hero.cta2">联系我</a>
+      </div>
+    </section>
+
+    <!-- 关于我 -->
+    <section class="section" id="about">
+      <div class="section__head">
+        <span class="section__index">01</span>
+        <h2 class="section__title" data-i18n="about.title">关于我</h2>
+      </div>
+      <div class="about__grid">
+        <p class="about__lead" id="about-lead">你好！我是夏一博，一名在校学生。</p>
+        <div class="about__body" id="about-body">
+          <p>这里是一段关于我的介绍占位：专业方向、兴趣爱好，以及我正在学习的内容。</p>
+          <p>这里可以补充第二段：最近在做什么、你的目标，或一句喜欢的话。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 宠物 -->
+    <section class="section" id="pets">
+      <div class="section__head">
+        <span class="section__index">02</span>
+        <h2 class="section__title" data-i18n="pets.title">宠物</h2>
+      </div>
+      <p class="section__subtitle" data-i18n="pets.subtitle">我的伙伴们</p>
+      <div class="pets__grid" id="pets-grid">
+        <article class="pet-card">
+          <h3 class="pet-card__name">宠物一</h3>
+          <p class="pet-card__desc">宠物介绍占位。</p>
+        </article>
+        <article class="pet-card">
+          <h3 class="pet-card__name">宠物二</h3>
+          <p class="pet-card__desc">宠物介绍占位。</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 自定义板块（由管理员在后台添加） -->
+    <div id="custom-sections"></div>
+
+    <!-- 联系 -->
+    <section class="section" id="contact">
+      <div class="section__head">
+        <span class="section__index" id="contact-index">03</span>
+        <h2 class="section__title" data-i18n="contact.title">联系方式</h2>
+      </div>
+      <p class="section__subtitle" data-i18n="contact.subtitle">欢迎通过以下方式找到我</p>
+      <div class="contact__list" id="contact-list">
+        <a class="contact__item" href="mailto:your-email@example.com">
+          <span class="contact__meta">
+            <span class="contact__label">邮箱</span>
+            <span class="contact__value">your-email@example.com</span>
+          </span>
+        </a>
+        <a class="contact__item" href="https://github.com/yourname" target="_blank" rel="noopener">
+          <span class="contact__meta">
+            <span class="contact__label">GitHub</span>
+            <span class="contact__value">https://github.com/yourname</span>
+          </span>
+        </a>
+        <div class="contact__item">
+          <span class="contact__meta">
+            <span class="contact__label">社交 / 其他</span>
+            <span class="contact__value">你的社交链接</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>
+      © <span id="year">2026</span> 夏一博 · <span data-i18n="footer.text">用热爱构建</span>
+      <a class="footer__admin" href="admin.html" data-i18n="footer.admin">管理员设置</a>
+    </p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/site-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
